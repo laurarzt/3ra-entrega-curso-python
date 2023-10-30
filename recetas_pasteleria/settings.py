@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+<<<<<<< HEAD
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,6 +23,14 @@ SECRET_KEY = '12345'
 
 
 DEBUG = False
+=======
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+SECRET_KEY = '12345'
+
+DEBUG = True
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72
 
 
 
@@ -77,6 +86,10 @@ DATABASES = {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -94,10 +107,14 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC-5'
 
 USE_I18N = True
 
@@ -105,4 +122,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+<<<<<<< HEAD
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+=======
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72

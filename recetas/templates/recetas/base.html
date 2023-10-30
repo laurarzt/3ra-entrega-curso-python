@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,3 +14,20 @@
   {% endblock %}
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recetas de Pastelería</title>
+</head>
+<body>
+  <div>
+    <a href="{% url 'index' %}">Inicio</a> |
+    <a href="{% url 'agregar_receta' %}">Agregar Receta</a> |
+    <a href="{% url 'buscar_receta' %}">Buscar Receta</a>
+  </div>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72

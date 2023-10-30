@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'recetas/base.html' %}
 
 {% block content %}
@@ -7,3 +8,14 @@
     <p>{{ receta.instrucciones }}</p>
   {% endfor %}
 {% endblock %}
+=======
+{% extends 'recetas/base.html' %}
+
+{% block content %}
+  <h2>Recetas de Pastelería</h2>
+  {% for receta in recetas %}
+    <h3>{{ receta.titulo }}</h3>
+    <p>{{ receta.instrucciones }}</p>
+  {% endfor %}
+{% endblock %}
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72

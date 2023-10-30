@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'recetas/base.html' %}
 
 {% block content %}
@@ -14,3 +15,21 @@
     {% endfor %}
   {% endif %}
 {% endblock %}
+=======
+{% extends 'recetas/base.html' %}
+
+{% block content %}
+  <h2>Buscar Receta</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+  </form>
+  {% if resultados %}
+    <h3>Resultados:</h3>
+    {% for receta in resultados %}
+      <p>{{ receta.titulo }}</p>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+>>>>>>> 9f2562dc98775d06a8d9e610f3db2a0bdd508f72
