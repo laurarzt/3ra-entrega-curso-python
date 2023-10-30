@@ -1,6 +1,5 @@
-# recetas/views.py
 from django.shortcuts import render
-from .models import Receta
+from ..models import Receta
 from .forms import RecetaForm, BuscarForm
 
 def index(request):

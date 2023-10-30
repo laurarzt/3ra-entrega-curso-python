@@ -1,5 +1,5 @@
 from django import forms
-from .models import Categoria, Ingrediente, Receta
+from ..models import Categoria, Ingrediente, Receta
 
 class RecetaForm(forms.ModelForm):
     class Meta:

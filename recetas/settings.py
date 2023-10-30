@@ -68,9 +68,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['*']
 LANGUAGE_CODE = 'es'
-TIME_ZONE = 'UTC-5'
+TIME_ZONE = 'America/Bogota'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
