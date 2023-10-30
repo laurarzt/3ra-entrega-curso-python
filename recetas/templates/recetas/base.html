@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recetas de Pastelería</title>
+</head>
+<body>
+  <div>
+    <a href="{% url 'index' %}">Inicio</a> |
+    <a href="{% url 'agregar_receta' %}">Agregar Receta</a> |
+    <a href="{% url 'buscar_receta' %}">Buscar Receta</a>
+  </div>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

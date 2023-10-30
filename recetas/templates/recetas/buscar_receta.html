@@ -1,0 +1,16 @@
+{% extends 'recetas/base.html' %}
+
+{% block content %}
+  <h2>Buscar Receta</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+  </form>
+  {% if resultados %}
+    <h3>Resultados:</h3>
+    {% for receta in resultados %}
+      <p>{{ receta.titulo }}</p>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
