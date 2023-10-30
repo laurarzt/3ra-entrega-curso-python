@@ -1,0 +1,9 @@
+{% extends 'recetas/base.html' %}
+
+{% block content %}
+  <h2>Recetas de Pastelería</h2>
+  {% for receta in recetas %}
+    <h3>{{ receta.titulo }}</h3>
+    <p>{{ receta.instrucciones }}</p>
+  {% endfor %}
+{% endblock %}
